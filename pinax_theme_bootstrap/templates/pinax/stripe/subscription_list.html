@@ -1,4 +1,5 @@
 {% extends "pinax/stripe/base.html" %}
+{% load i18n %}
 
 {% block body_class %}pinax-stripe-subscriptions{% endblock %}
 
@@ -7,36 +8,52 @@
     <div class="panel-heading">
         <a class="pull-right btn btn-xs btn-primary" href="{% url "pinax_stripe_subscription_create" %}">
             <i class="fa fa-plus"></i>
-            Add Subscription
+            {% trans "Add Subscription" %}
         </a>
-        <h4 class="panel-title">Current Subscriptions</h4>
+        <h4 class="panel-title">{% blocktrans %}Current Subscriptions{% endblocktrans %}</h4>
     </div>
     <table class="table table-bordered">
         <thead>
-            <tr><th></th><th>Current Period</th><th>Plan</th><th>Since</th><th>Status</th></tr>
+            <tr><th>{% trans "Plan" %}</th><th>{% blocktrans %}Current Period{% endblocktrans %}</th><th>{% trans "Ended at" %}</th><th>{% trans "Status" %}</th></th><th></tr>
         </thead>
         <tbody>
             {% for subscription in object_list %}
-            <tr>
-                <td>
-                    <a class="btn btn-xs btn-default" href="{% url "pinax_stripe_subscription_delete" subscription.pk %}">Cancel</a>
-                    <a class="btn btn-xs btn-default" href="{% url "pinax_stripe_subscription_update" subscription.pk %}">Update</a>
-                </td>
-                <td>
-                    {{ subscription.current_period_start.date }}—{{subscription.current_period_end.date }}
-                </td>
-                <td>
-                    {{ subscription.plan.name }}
-                </td>
-                <td>
-                    {{ subscription.start }}
-                </td>
-                <td>
-                    {{ subscription.status|title }}
-                </td>
-            </tr>
+                {% if subscription.status == 'active' %}
+                <tr>
+                    <td>
+                        {{ subscription.plan.name }}
+                    </td>
+                    <td>
+                        {{ subscription.current_period_start.date }}—{{subscription.current_period_end.date }}
+                    </td>
+                    <td>
+                        {% if subscription.canceled_at == None %}
+                            {% blocktrans %}Renews {% endblocktrans %}{{ subscription.current_period_end.date }}
+                        {% else %}
+                            {{ subscription.current_period_end.date }}
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if subscription.canceled_at == None %}
+                            {{ subscription.status }}
+                        {% else %}
+                            {% blocktrans %}Canceled{% endblocktrans %}
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if subscription.canceled_at == None %}
+                            <a class="btn btn-xs btn-default" href="{% url "pinax_stripe_subscription_delete" subscription.pk %}">{% trans "Cancel" %}</a>
+                         {% else %}
+                            <a class="btn btn-xs btn-default disabled" href="{% url "pinax_stripe_subscription_delete" subscription.pk %}">{% trans "Cancel" %}</a>
+                        {% endif %}
+                       {% comment %}
+                        <a class="btn btn-xs btn-default" href="{% url "pinax_stripe_subscription_update" subscription.pk %}">Update</a>
+                        {% endcomment %}
+                    </td>
+                </tr>
+                {% endif %}
             {% empty %}
-            <tr><td colspan="4">You have no subscriptions.</td></tr>
+            <tr><td colspan="4">{% blocktrans %}You have no subscriptions.{% endblocktrans %}</td></tr>
             {% endfor %}
         </tbody>
     </table>
