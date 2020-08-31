@@ -94,8 +94,8 @@ msgid ""
 "If you go ahead and delete your account, your information will be "
 "<b>expunged within %(ACCOUNT_DELETION_EXPUNGE_HOURS)s hours</b>."
 msgstr ""
-"Si vous continuer et supprimer votre compte, vos informations seront "
-"<b>effacée dans %(ACCOUNT_DELETION_EXPUNGE_HOURS)s heures</b>."
+"Si vous supprimez votre compte, toutes vos informations personnelles seront "
+"<b>effacées sous %(ACCOUNT_DELETION_EXPUNGE_HOURS)s heures</b>."
 
 #: templates/account/delete.html:16
 msgid "Delete My Account"
