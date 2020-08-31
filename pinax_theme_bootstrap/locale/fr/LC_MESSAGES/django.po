@@ -7,38 +7,38 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-29 02:55+0100\n"
+"POT-Creation-Date: 2020-08-31 02:34+0200\n"
 "PO-Revision-Date: 2015-12-29 03:43+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.6\n"
 
-#: templates/404.html:5
+#: pinax_theme_bootstrap/templates/404.html:5
 msgid "Not Found"
 msgstr "Pas trouvé"
 
-#: templates/404.html:9
+#: pinax_theme_bootstrap/templates/404.html:9
 msgid "Page not found"
 msgstr "Page non trouvée"
 
-#: templates/404.html:10
+#: pinax_theme_bootstrap/templates/404.html:10
 msgid "We're sorry but that page could not be found."
 msgstr "Nous sommes désolés, mais cette page est introuvable."
 
-#: templates/500.html:5
+#: pinax_theme_bootstrap/templates/500.html:5
 msgid "Server Error"
 msgstr "Erreur du serveur"
 
-#: templates/500.html:9
+#: pinax_theme_bootstrap/templates/500.html:9
 msgid "Something went wrong"
 msgstr "Quelque chose a mal tourné"
 
-#: templates/500.html:10
+#: pinax_theme_bootstrap/templates/500.html:10
 msgid ""
 "We're sorry but a server error has occurred. We've been notified and will "
 "look into it as soon as possible."
@@ -46,49 +46,60 @@ msgstr ""
 "Nous sommes désolés, mais une erreur de serveur a eu lieu. Nous avons été "
 "avisés et examinerons la question dès que possible ."
 
-#: templates/_account_bar.html:12 templates/account/base.html.py:9
+#: pinax_theme_bootstrap/templates/_account_bar.html:12
+#: pinax_theme_bootstrap/templates/account/base.html:9
 msgid "Settings"
 msgstr "Paramètres"
 
-#: templates/_account_bar.html:14
+#: pinax_theme_bootstrap/templates/_account_bar.html:14
 msgid "Admin"
 msgstr "Administration"
 
-#: templates/_account_bar.html:18 templates/account/logout.html.py:5
-#: templates/account/logout.html:11 templates/account/logout.html.py:15
+#: pinax_theme_bootstrap/templates/_account_bar.html:18
+#: pinax_theme_bootstrap/templates/account/logout.html:5
+#: pinax_theme_bootstrap/templates/account/logout.html:11
+#: pinax_theme_bootstrap/templates/account/logout.html:15
 msgid "Log out"
 msgstr "Déconnexion"
 
-#: templates/_account_bar.html:23 templates/account/login.html.py:7
-#: templates/account/login.html:19 templates/account/signup.html.py:23
+#: pinax_theme_bootstrap/templates/_account_bar.html:23
+#: pinax_theme_bootstrap/templates/account/login.html:7
+#: pinax_theme_bootstrap/templates/account/login.html:19
+#: pinax_theme_bootstrap/templates/account/signup.html:23
 msgid "Log in"
 msgstr "Se connecter"
 
-#: templates/_account_bar.html:25 templates/account/login.html.py:25
-#: templates/account/signup.html:7 templates/account/signup.html.py:13
-#: templates/account/signup.html:19 templates/account/signup_closed.html:5
+#: pinax_theme_bootstrap/templates/_account_bar.html:25
+#: pinax_theme_bootstrap/templates/account/login.html:25
+#: pinax_theme_bootstrap/templates/account/signup.html:7
+#: pinax_theme_bootstrap/templates/account/signup.html:13
+#: pinax_theme_bootstrap/templates/account/signup.html:19
+#: pinax_theme_bootstrap/templates/account/signup_closed.html:5
 msgid "Sign up"
 msgstr "S'inscrire"
 
-#: templates/account/base.html:12 templates/account/settings.html.py:8
-#: templates/account/settings.html:14
+#: pinax_theme_bootstrap/templates/account/base.html:12
+#: pinax_theme_bootstrap/templates/account/settings.html:8
+#: pinax_theme_bootstrap/templates/account/settings.html:14
 msgid "Account"
 msgstr "Compte"
 
-#: templates/account/base.html:15 templates/account/password_change.html:8
-#: templates/account/password_change.html:14
+#: pinax_theme_bootstrap/templates/account/base.html:15
+#: pinax_theme_bootstrap/templates/account/password_change.html:8
+#: pinax_theme_bootstrap/templates/account/password_change.html:14
 msgid "Change password"
 msgstr "Changer le mot de passe"
 
-#: templates/account/base.html:18
+#: pinax_theme_bootstrap/templates/account/base.html:18
 msgid "Delete account"
 msgstr "Supprimer mon compte"
 
-#: templates/account/delete.html:7 templates/account/delete.html.py:10
+#: pinax_theme_bootstrap/templates/account/delete.html:7
+#: pinax_theme_bootstrap/templates/account/delete.html:10
 msgid "Delete Account"
 msgstr "Supprimer mon compte"
 
-#: templates/account/delete.html:12
+#: pinax_theme_bootstrap/templates/account/delete.html:12
 #, python-format
 msgid ""
 "If you go ahead and delete your account, your information will be "
@@ -97,11 +108,11 @@ msgstr ""
 "Si vous supprimez votre compte, toutes vos informations personnelles seront "
 "<b>effacées sous %(ACCOUNT_DELETION_EXPUNGE_HOURS)s heures</b>."
 
-#: templates/account/delete.html:16
+#: pinax_theme_bootstrap/templates/account/delete.html:16
 msgid "Delete My Account"
 msgstr "Supprimer mon compte"
 
-#: templates/account/email/email_confirmation_message.txt:1
+#: pinax_theme_bootstrap/templates/account/email/email_confirmation_message.txt:1
 #, python-format
 msgid ""
 "A user on %(site_name)s has created an account using this email address.\n"
@@ -117,12 +128,12 @@ msgstr ""
 "\n"
 "Si vous n'êtes pas inscrit à ce site, vous pouvez ignorer ce message.\n"
 
-#: templates/account/email/email_confirmation_subject.txt:1
+#: pinax_theme_bootstrap/templates/account/email/email_confirmation_subject.txt:1
 #, python-format
 msgid "Confirm email address for %(site_name)s"
 msgstr "Confirmer votre adresse email pour %(site_name)s"
 
-#: templates/account/email/invite_user.txt:1
+#: pinax_theme_bootstrap/templates/account/email/invite_user.txt:1
 #, python-format
 msgid ""
 "You have been invited to sign up at %(name)s.\n"
@@ -133,12 +144,12 @@ msgstr ""
 "\n"
 "%(signup_url)s\n"
 
-#: templates/account/email/invite_user_subject.txt:1
+#: pinax_theme_bootstrap/templates/account/email/invite_user_subject.txt:1
 #, python-format
 msgid "Create an account on %(name)s"
 msgstr "Créez un compte sur %(name)s"
 
-#: templates/account/email/password_change.txt:1
+#: pinax_theme_bootstrap/templates/account/email/password_change.txt:1
 #, python-format
 msgid ""
 "This is the email notification to confirm your password has been changed on "
@@ -147,11 +158,11 @@ msgstr ""
 "Ceci est la notification par email pour confirmer que votre changement de "
 "mot de passe a eu lieu le %(now)s."
 
-#: templates/account/email/password_change_subject.txt:1
+#: pinax_theme_bootstrap/templates/account/email/password_change_subject.txt:1
 msgid "Change password email notification"
 msgstr "Changement de mot de passe par notification par email."
 
-#: templates/account/email/password_reset.txt:1
+#: pinax_theme_bootstrap/templates/account/email/password_reset.txt:1
 #, python-format
 msgid ""
 "You're receiving this email because you or someone else has requested a "
@@ -169,31 +180,31 @@ msgstr ""
 "initialisation de votre mot de passe.\n"
 "%(password_reset_url)s\n"
 
-#: templates/account/email/password_reset_subject.txt:1
+#: pinax_theme_bootstrap/templates/account/email/password_reset_subject.txt:1
 #, python-format
 msgid "[%(site_name)s] Password reset"
 msgstr "[%(site_name)s] Ré-initialiser le mot de passe"
 
-#: templates/account/email_confirm.html:5
-#: templates/account/email_confirm.html:11
+#: pinax_theme_bootstrap/templates/account/email_confirm.html:5
+#: pinax_theme_bootstrap/templates/account/email_confirm.html:11
 msgid "Confirm Email"
 msgstr "Confirmer l'email"
 
-#: templates/account/email_confirm.html:14
+#: pinax_theme_bootstrap/templates/account/email_confirm.html:14
 #, python-format
 msgid "Confirm email address <b>%(email)s</b>?"
 msgstr "Confirmer les adresses email <b>%(email)s</b> ?"
 
-#: templates/account/email_confirm.html:15
+#: pinax_theme_bootstrap/templates/account/email_confirm.html:15
 msgid "Confirm"
 msgstr "Confirmer"
 
-#: templates/account/email_confirmation_sent.html:5
-#: templates/account/email_confirmation_sent.html:8
+#: pinax_theme_bootstrap/templates/account/email_confirmation_sent.html:5
+#: pinax_theme_bootstrap/templates/account/email_confirmation_sent.html:8
 msgid "Confirm your email address"
 msgstr "Confirmer votre adresse email"
 
-#: templates/account/email_confirmation_sent.html:10
+#: pinax_theme_bootstrap/templates/account/email_confirmation_sent.html:10
 #, python-format
 msgid ""
 "We have sent you an email to <b>%(email)s</b> for verification. Follow the "
@@ -207,48 +218,48 @@ msgstr ""
 "contactez-nous à l'adresse : <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
 "%(THEME_CONTACT_EMAIL)s</a>."
 
-#: templates/account/email_confirmation_sent.html:11
+#: pinax_theme_bootstrap/templates/account/email_confirmation_sent.html:11
 msgid "Go back"
 msgstr "Retourner"
 
-#: templates/account/email_confirmed.html:5
-#: templates/account/email_confirmed.html:8
+#: pinax_theme_bootstrap/templates/account/email_confirmed.html:5
+#: pinax_theme_bootstrap/templates/account/email_confirmed.html:8
 msgid "Email confirmed"
 msgstr "Adresse email confirmée"
 
-#: templates/account/email_confirmed.html:9
+#: pinax_theme_bootstrap/templates/account/email_confirmed.html:9
 #, python-format
 msgid "You have confirmed <b>%(email)s</b>"
 msgstr "Vous avez confirmé <b>%(email)s</b>"
 
-#: templates/account/login.html:13
+#: pinax_theme_bootstrap/templates/account/login.html:13
 msgid "Log in to an existing account"
 msgstr "Se connecter avec un compte existant"
 
-#: templates/account/login.html:20
+#: pinax_theme_bootstrap/templates/account/login.html:20
 msgid "Forgot your password?"
 msgstr "Vous avez oublié votre mot de passe ?"
 
-#: templates/account/login.html:25
+#: pinax_theme_bootstrap/templates/account/login.html:25
 msgid "Don't have an account?"
 msgstr "Vous n'avez pas de compte ?"
 
-#: templates/account/logout.html:14
+#: pinax_theme_bootstrap/templates/account/logout.html:14
 msgid "Are you sure you want to log out?"
 msgstr "Etes-vous sûr de vouloir vous déconnecter ?"
 
-#: templates/account/password_change.html:18
-#: templates/account/password_reset_token.html:16
-#: templates/account/settings.html:17
+#: pinax_theme_bootstrap/templates/account/password_change.html:18
+#: pinax_theme_bootstrap/templates/account/password_reset_token.html:16
+#: pinax_theme_bootstrap/templates/account/settings.html:17
 msgid "Save"
 msgstr "Sauvegarder"
 
-#: templates/account/password_reset.html:7
-#: templates/account/password_reset.html:15
+#: pinax_theme_bootstrap/templates/account/password_reset.html:7
+#: pinax_theme_bootstrap/templates/account/password_reset.html:15
 msgid "Password reset"
 msgstr "Ré-initialiser le mot de passe"
 
-#: templates/account/password_reset.html:16
+#: pinax_theme_bootstrap/templates/account/password_reset.html:16
 msgid ""
 "Forgotten your password? Enter your email address below, and we'll send you "
 "an email allowing you to reset it."
@@ -257,11 +268,11 @@ msgstr ""
 "dessous et nous vous enverrons un email qui vous permettra de le ré-"
 "initialiser."
 
-#: templates/account/password_reset.html:22
+#: pinax_theme_bootstrap/templates/account/password_reset.html:22
 msgid "Reset my password"
 msgstr "Ré-initialisation de mon mot de passe"
 
-#: templates/account/password_reset.html:29
+#: pinax_theme_bootstrap/templates/account/password_reset.html:29
 #, python-format
 msgid ""
 "If you have any trouble resetting your password, contact us at <a href="
@@ -271,12 +282,12 @@ msgstr ""
 "contactez-nous à l'adresse <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
 "%(THEME_CONTACT_EMAIL)s</a>."
 
-#: templates/account/password_reset_sent.html:6
-#: templates/account/password_reset_sent.html:9
+#: pinax_theme_bootstrap/templates/account/password_reset_sent.html:6
+#: pinax_theme_bootstrap/templates/account/password_reset_sent.html:9
 msgid "Password reset sent"
 msgstr "La demande de ré-initialisation du mot de passe a été envoyée."
 
-#: templates/account/password_reset_sent.html:11
+#: pinax_theme_bootstrap/templates/account/password_reset_sent.html:11
 #, python-format
 msgid ""
 "We have sent you an email. If you do not receive it within a few minutes, "
@@ -287,33 +298,32 @@ msgstr ""
 "qui viennent, essayez à nouveau ou bien contactez nous à l'adresse <a href="
 "\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
 
-#: templates/account/password_reset_sent.html:20
+#: pinax_theme_bootstrap/templates/account/password_reset_sent.html:20
 msgid "Resend"
 msgstr "Envoyer à nouveau"
 
-#: templates/account/password_reset_sent.html:25
+#: pinax_theme_bootstrap/templates/account/password_reset_sent.html:25
 #, python-format
 msgid ""
 "We have resent the password email. If you do not receive it within a few "
 "minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
 "%(THEME_CONTACT_EMAIL)s</a>."
 msgstr ""
-"Nous vous avons envoyé à nouveau l'email concernant le mot de passe. Si "
-"vous ne le recevez pas dans les minutes qui viennent, contactez nous à "
-"l'adresse <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
+"Nous vous avons envoyé à nouveau l'email concernant le mot de passe. Si vous "
+"ne le recevez pas dans les minutes qui viennent, contactez nous à l'adresse "
+"<a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
 
-#: templates/account/password_reset_token.html:6
-#: templates/account/password_reset_token.html:12
+#: pinax_theme_bootstrap/templates/account/password_reset_token.html:6
+#: pinax_theme_bootstrap/templates/account/password_reset_token.html:12
 msgid "Set your new password"
 msgstr "Définir votre nouveau mot de passe"
 
-#: templates/account/password_reset_token_fail.html:5
-#: templates/account/password_reset_token_fail.html:8
+#: pinax_theme_bootstrap/templates/account/password_reset_token_fail.html:5
+#: pinax_theme_bootstrap/templates/account/password_reset_token_fail.html:8
 msgid "Bad token"
 msgstr "Jeton (token) non valide"
 
-#: templates/account/password_reset_token_fail.html:10
+#: pinax_theme_bootstrap/templates/account/password_reset_token_fail.html:10
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -323,54 +333,113 @@ msgstr ""
 "parce qu'il a déjà été utilisé. Merci de demander à nouveau une <a href="
 "\"%(url)s\">ré-initialisation du mot de passe</a>."
 
-#: templates/account/signup.html:23
+#: pinax_theme_bootstrap/templates/account/signup.html:23
 msgid "Already have an account?"
 msgstr "Vous avez déjà un compte ?"
 
-#: templates/account/signup_closed.html:8
+#: pinax_theme_bootstrap/templates/account/signup_closed.html:8
 msgid "This site is in private beta"
 msgstr "Ce site est en béta privée"
 
-#: templates/account/signup_closed.html:9
+#: pinax_theme_bootstrap/templates/account/signup_closed.html:9
 msgid "If you have signup code you can enter it below."
 msgstr "Si vous avez un code d'inscription, le saisir ci-dessous."
 
-#: templates/account/signup_closed.html:11
+#: pinax_theme_bootstrap/templates/account/signup_closed.html:11
 msgid "Your signup code..."
 msgstr "Votre code d'inscription…"
 
-#: templates/pagination/builtin_pagination.html:9
-#: templates/pagination/builtin_pagination.html:12
-#: templates/pagination/django_pagination_pagination.html:8
-#: templates/pagination/django_pagination_pagination.html:11
+#: pinax_theme_bootstrap/templates/pagination/builtin_pagination.html:9
+#: pinax_theme_bootstrap/templates/pagination/builtin_pagination.html:12
+#: pinax_theme_bootstrap/templates/pagination/django_pagination_pagination.html:8
+#: pinax_theme_bootstrap/templates/pagination/django_pagination_pagination.html:11
 msgid "Previous"
 msgstr "Précédent"
 
-#: templates/pagination/builtin_pagination.html:18
-#: templates/pagination/builtin_pagination.html:20
-#: templates/pagination/django_pagination_pagination.html:21
-#: templates/pagination/django_pagination_pagination.html:23
+#: pinax_theme_bootstrap/templates/pagination/builtin_pagination.html:18
+#: pinax_theme_bootstrap/templates/pagination/builtin_pagination.html:20
+#: pinax_theme_bootstrap/templates/pagination/django_pagination_pagination.html:21
+#: pinax_theme_bootstrap/templates/pagination/django_pagination_pagination.html:23
 msgid "Next"
 msgstr "Suivant"
 
-#: templates/pagination/builtin_pagination_reverse.html:10
-#: templates/pagination/builtin_pagination_reverse.html:13
+#: pinax_theme_bootstrap/templates/pagination/builtin_pagination_reverse.html:10
+#: pinax_theme_bootstrap/templates/pagination/builtin_pagination_reverse.html:13
 msgid "Newer"
 msgstr "Nouveaux"
 
-#: templates/pagination/builtin_pagination_reverse.html:19
-#: templates/pagination/builtin_pagination_reverse.html:21
+#: pinax_theme_bootstrap/templates/pagination/builtin_pagination_reverse.html:19
+#: pinax_theme_bootstrap/templates/pagination/builtin_pagination_reverse.html:21
 msgid "Older"
 msgstr "Anciens"
 
-#: templates/pinax/invitations/_invite_form.html:15
+#: pinax_theme_bootstrap/templates/pinax/invitations/_invite_form.html:15
 msgid "Invite"
 msgstr "Invitation"
 
-#: templates/pinax/invitations/_invite_form.html:21
+#: pinax_theme_bootstrap/templates/pinax/invitations/_invite_form.html:21
 msgid "You do not have any invitations currrently."
 msgstr "Vous ne disposez pas actuellement d’invitations."
 
-#: templates/pinax/invitations/_invited.html:17
+#: pinax_theme_bootstrap/templates/pinax/invitations/_invited.html:17
 msgid "You have not sent any invitations yet."
+msgstr "Vous n’avez pas encore envoyé d'invitations."
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/_invoice_table.html:5
+msgid "Date"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/_invoice_table.html:5
+msgid "Description"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/_invoice_table.html:5
+msgid "Total"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/_invoice_table.html:5
+msgid "Paid"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/subscription_list.html:11
+msgid "Add Subscription"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/subscription_list.html:13
+msgid "Current Subscriptions"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/subscription_list.html:17
+msgid "Plan"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/subscription_list.html:17
+msgid "Current Period"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/subscription_list.html:17
+msgid "Ended at"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/subscription_list.html:17
+msgid "Status"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/subscription_list.html:31
+msgid "Renews "
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/subscription_list.html:40
+msgid "Canceled"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/subscription_list.html:45
+#: pinax_theme_bootstrap/templates/pinax/stripe/subscription_list.html:47
+msgid "Cancel"
+msgstr ""
+
+#: pinax_theme_bootstrap/templates/pinax/stripe/subscription_list.html:57
+#, fuzzy
+#| msgid "You have not sent any invitations yet."
+msgid "You have no subscriptions."
 msgstr "Vous n’avez pas encore envoyé d'invitations."
